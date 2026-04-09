@@ -1,10 +1,32 @@
-import { StrictMode } from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import './global.css'
+
+import { ToastContainer } from 'react-toastify'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+import Dashboard from './components/consuts/index.jsx'
+import Login from './components/login/index.jsx'
+
+
+const router = createBrowserRouter([
+{
+  path: '/',
+  element: <Login />
+},
+{
+  path: '/consultas',
+  element: <Dashboard />
+},
+// {
+//   path: '/cadastro-pacie',
+//   element: <Dashboard />
+// },
+])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <React.StrictMode>
+    <ToastContainer />
+    <RouterProvider router={router} />
+  </React.StrictMode>,
 )
