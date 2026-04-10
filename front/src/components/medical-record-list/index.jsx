@@ -1,15 +1,20 @@
+//style
+
 import * as C from './styles'
 
 
 //components
 import Toolbar from "../ui/Toolbar"
 import SideMenu from "../ui/SideMenu"
-import ExamsForm from "../ui/ExamsForm"
+
+import MedicalRecordList from "../ui/MedicalRecordList"
 
 
-//style
 
-function Exames () {
+
+
+
+export default function Dashboard () {
   return (
     <>
     <section>
@@ -17,14 +22,13 @@ function Exames () {
         <SideMenu/>
       
         <C.Main>
-          <Toolbar title="Cadastro de exame" />
+          <Toolbar title="Listagem de Prontuários" />
           
          
-
-          <C.Content>
+          <C.ContentRecordList>
               
-              <ExamsForm/>
-          </C.Content>
+              <MedicalRecordList/>
+          </C.ContentRecordList>
 
             
         </C.Main>
@@ -35,4 +39,4 @@ function Exames () {
       </section>
     </>
   )
-} export default Exames
+}

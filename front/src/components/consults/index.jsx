@@ -1,9 +1,9 @@
 import * as C from './styles'
 
 //components
-import Toolbar from '../../components/ui/Toolbar'
-import SideMenu from '../../components/ui/SideMenu'
-import ConsultationForm from '../../components/ui/ConsultationForm'
+import Toolbar from '../ui/Toolbar'
+import SideMenu from '../ui/SideMenu'
+import ConsultationForm from '../ui/ConsultationForm'
 
 //style
 

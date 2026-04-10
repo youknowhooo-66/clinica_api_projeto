@@ -4,12 +4,15 @@ import * as C from './styles'
 //components
 import Toolbar from "../ui/Toolbar"
 import SideMenu from "../ui/SideMenu"
-import ExamsForm from "../ui/ExamsForm"
+import RegisterFormPatient from "../ui/RegisterFormPatient"
 
 
 //style
 
-function Exames () {
+
+
+
+export default function Dashboard () {
   return (
     <>
     <section>
@@ -17,16 +20,16 @@ function Exames () {
         <SideMenu/>
       
         <C.Main>
-          <Toolbar title="Cadastro de exame" />
+          <Toolbar title="Cadastro de Paciente" />
           
-         
-
           <C.Content>
+              <RegisterFormPatient/>
               
-              <ExamsForm/>
           </C.Content>
 
-            
+         
+
+           
         </C.Main>
   
       
@@ -35,4 +38,4 @@ function Exames () {
       </section>
     </>
   )
-} export default Exames
+}
