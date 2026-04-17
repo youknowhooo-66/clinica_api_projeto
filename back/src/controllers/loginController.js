@@ -1,6 +1,6 @@
-const db = require('../config/db.js');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+import db  from'../config/db.js';
+import bcrypt from'bcrypt';
+import jwt from'jsonwebtoken';
 
 const login = async (req, res) => {
     try {
@@ -48,6 +48,4 @@ const login = async (req, res) => {
     }
 }
 
-module.exports = {
-    login
-};
+export default { login };
